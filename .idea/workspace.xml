@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b30759b9-0a89-425b-b0d1-d5f04b18fca2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/JvmTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LamdaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PairTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PairTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="b30759b9-0a89-425b-b0d1-d5f04b18fca2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +80,7 @@
       <updated>1590460361401</updated>
       <workItem from="1590460365011" duration="6808000" />
       <workItem from="1590579702053" duration="398000" />
+      <workItem from="1596012221961" duration="346000" />
     </task>
     <servers />
   </component>
