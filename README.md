@@ -1,7 +1,7 @@
 # java_demo
 
 #### 介绍
-java基础demo
+java基础demo，
 
 #### 软件架构
 软件架构说明

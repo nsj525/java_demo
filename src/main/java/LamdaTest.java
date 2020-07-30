@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 public class LamdaTest {
 
     public static void main(String[] args) {
-        System.out.println("-------开始方法");
         List<Pair<Integer,String>> list = addData();
         Map<Integer,List<Pair<Integer,String>>> map = list.stream().collect(Collectors.groupingBy(Pair::getLeft));
         System.out.println("转换的结果为："+ JSONObject.toJSONString(map));

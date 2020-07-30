@@ -1,2 +1,8 @@
+aop/TestDemoDto.class
+aop/TryImport.class
+java_extends/Child.class
+java_extends/Parent.class
 PairTest.class
+aop/TryImportAspect.class
 LamdaTest.class
+java_extends/ExtendsTest.class
