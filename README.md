@@ -7,9 +7,9 @@ java基础demo，
 软件架构说明
 
 
-#### 安装教程
+#### 相关资料
 
-1.  xxxx
+1. [aop原理](https://blog.csdn.net/wyl6019/article/details/80136000)
 2.  xxxx
 3.  xxxx
 

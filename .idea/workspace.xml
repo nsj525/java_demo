@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b30759b9-0a89-425b-b0d1-d5f04b18fca2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generic/PublicObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generic/WebResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/StatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aop/TestDemoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/TestDemoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aop/TryImportAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/TryImportAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aop/TestDemoDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aop/TestDemoDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aop/TryImportAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aop/TryImportAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Kotlin Enum" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -143,7 +143,7 @@
       <updated>1590460361401</updated>
       <workItem from="1590460365011" duration="6808000" />
       <workItem from="1590579702053" duration="398000" />
-      <workItem from="1596012221961" duration="23460000" />
+      <workItem from="1596012221961" duration="25986000" />
     </task>
     <servers />
   </component>
@@ -156,10 +156,15 @@
     </state>
     <state x="320" y="94" key="#Project_Structure/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596079829724" />
     <state x="320" y="95" key="#Project_Structure/0.23.1440.813/-255.-1057.1920.1057@0.23.1440.813" timestamp="1590460374419" />
-    <state x="379" y="358" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1596078075887">
+    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1596104214583">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596104214583" />
+    <state x="379" y="358" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1596104063852">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="379" y="358" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596078075887" />
+    <state x="379" y="358" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596104063852" />
     <state width="1398" height="392" key="GridCell.Tab.0.bottom" timestamp="1596097214179">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
