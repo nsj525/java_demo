@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b30759b9-0a89-425b-b0d1-d5f04b18fca2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/aop/TestDemoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aop/TryImport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aop/TryImportAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java_extends/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java_extends/ExtendsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java_extends/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/AopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.en.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LamdaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LamdaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LamdaTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PairTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java_demo-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/aplication.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aop/TestDemoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/TestDemoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aop/TryImportAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/TryImportAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aop/TestDemoDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aop/TestDemoDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aop/TryImportAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aop/TryImportAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +142,7 @@
       <updated>1590460361401</updated>
       <workItem from="1590460365011" duration="6808000" />
       <workItem from="1590579702053" duration="398000" />
-      <workItem from="1596012221961" duration="21069000" />
+      <workItem from="1596012221961" duration="23231000" />
     </task>
     <servers />
   </component>
@@ -172,36 +159,36 @@
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="379" y="358" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596078075887" />
-    <state width="1398" height="392" key="GridCell.Tab.0.bottom" timestamp="1596096143204">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="392" key="GridCell.Tab.0.bottom" timestamp="1596097214179">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1398" height="392" key="GridCell.Tab.0.bottom/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1596096143204" />
     <state width="1398" height="392" key="GridCell.Tab.0.bottom/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596090209351" />
-    <state width="1398" height="375" key="GridCell.Tab.0.bottom/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596094616812" />
+    <state width="1398" height="392" key="GridCell.Tab.0.bottom/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596097214179" />
     <state width="1398" height="392" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1596095026112" />
     <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.813/-255.-1057.1920.1057@0.23.1440.813" timestamp="1590473805609" />
-    <state width="1398" height="392" key="GridCell.Tab.0.center" timestamp="1596096143203">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="392" key="GridCell.Tab.0.center" timestamp="1596097214178">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1398" height="392" key="GridCell.Tab.0.center/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1596096143203" />
     <state width="1398" height="392" key="GridCell.Tab.0.center/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596090209350" />
-    <state width="1398" height="375" key="GridCell.Tab.0.center/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596094616811" />
+    <state width="1398" height="392" key="GridCell.Tab.0.center/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596097214178" />
     <state width="1398" height="392" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1596095026110" />
     <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.813/-255.-1057.1920.1057@0.23.1440.813" timestamp="1590473805609" />
-    <state width="1398" height="392" key="GridCell.Tab.0.left" timestamp="1596096143202">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="392" key="GridCell.Tab.0.left" timestamp="1596097214177">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1398" height="392" key="GridCell.Tab.0.left/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1596096143202" />
     <state width="1398" height="392" key="GridCell.Tab.0.left/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596090209349" />
-    <state width="1398" height="375" key="GridCell.Tab.0.left/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596094616810" />
+    <state width="1398" height="392" key="GridCell.Tab.0.left/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596097214177" />
     <state width="1398" height="392" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1596095026110" />
     <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.813/-255.-1057.1920.1057@0.23.1440.813" timestamp="1590473805609" />
-    <state width="1398" height="392" key="GridCell.Tab.0.right" timestamp="1596096143204">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="392" key="GridCell.Tab.0.right" timestamp="1596097214179">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1398" height="392" key="GridCell.Tab.0.right/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1596096143204" />
     <state width="1398" height="392" key="GridCell.Tab.0.right/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596090209351" />
-    <state width="1398" height="375" key="GridCell.Tab.0.right/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596094616812" />
+    <state width="1398" height="392" key="GridCell.Tab.0.right/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596097214179" />
     <state width="1398" height="392" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1596095026111" />
     <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.813/-255.-1057.1920.1057@0.23.1440.813" timestamp="1590473805609" />
     <state width="1398" height="310" key="GridCell.Tab.1.bottom" timestamp="1596096137290">
@@ -255,7 +242,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/aop/TestDemoDto.java</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

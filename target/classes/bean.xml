@@ -20,8 +20,8 @@
     <!--配置aop-->
     <aop:aspectj-autoproxy proxy-target-class="true" expose-proxy="true"/>
 
-    <aop:config expose-proxy="true">
-        <aop:pointcut id="serviceExecutionPointcut" expression="execution(* aop.*.*(..))"/>
-    </aop:config>
+<!--    <aop:config expose-proxy="true">-->
+<!--        <aop:pointcut id="serviceExecutionPointcut" expression="execution(* aop.*.*(..))"/>-->
+<!--    </aop:config>-->
 
 </beans>

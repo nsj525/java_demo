@@ -3,7 +3,8 @@ package aop;
 import org.springframework.stereotype.Component;
 
 /**
- * !!!注意
+ * !!!  Spring Aop 必须在xml配置中配置切点 | 或在切面中通过@Pointcat("@annotation(aop.TryImport)")
+ * 相对xml配置较为通用，切面中注解配置只适用于此切面方法
  *
  * @author nijiejie
  */

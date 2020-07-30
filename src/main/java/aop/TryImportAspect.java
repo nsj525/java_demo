@@ -18,9 +18,9 @@ import java.lang.reflect.Method;
 @Aspect
 public class TryImportAspect {
 
-    @Pointcut()
+    @Pointcut("@annotation(aop.TryImport)")
     public void a(){
-
+        System.out.println("-------注解式定义切点------");
     }
 
     @Around("@annotation(aop.TryImport)")
