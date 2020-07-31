@@ -2,39 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b30759b9-0a89-425b-b0d1-d5f04b18fca2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/strategy/CoverResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/strategy/impl/DemoACoverServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/strategy/impl/DemoBCoverServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/strategy/service/CoverService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/StrategyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Generic/PublicObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/Generic/PublicObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Generic/WebResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/Generic/WebResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aop/TestDemoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/aop/TestDemoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aop/TryImport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/aop/TryImport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aop/TryImportAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/aop/TryImportAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/StatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/enums/StatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/java_extends/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/java_extends/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/java_extends/ExtendsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/java_extends/ExtendsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/java_extends/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/java_extends/Parent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/AopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/AopTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aop/TestDemoDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aop/TryImport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aop/TryImportAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java_extends/Child.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java_extends/ExtendsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java_extends/Parent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/strategy/impl/DemoACoverServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/strategy/impl/DemoACoverServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/strategy/impl/DemoBCoverServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/strategy/impl/DemoBCoverServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/strategy/service/CoverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/strategy/service/CoverService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/java_demo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/java_demo-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/AopTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/AopTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +152,7 @@
       <updated>1590460361401</updated>
       <workItem from="1590460365011" duration="6808000" />
       <workItem from="1590579702053" duration="398000" />
-      <workItem from="1596012221961" duration="36760000" />
+      <workItem from="1596012221961" duration="36891000" />
     </task>
     <servers />
   </component>
@@ -206,35 +179,35 @@
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="493" y="292" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596181672383" />
-    <state width="1398" height="361" key="GridCell.Tab.0.bottom" timestamp="1596186102290">
+    <state width="1398" height="361" key="GridCell.Tab.0.bottom" timestamp="1596186218420">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1398" height="392" key="GridCell.Tab.0.bottom/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1596096143204" />
-    <state width="1398" height="361" key="GridCell.Tab.0.bottom/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596186102290" />
+    <state width="1398" height="361" key="GridCell.Tab.0.bottom/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596186218420" />
     <state width="1398" height="392" key="GridCell.Tab.0.bottom/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596097214179" />
     <state width="1398" height="392" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1596095026112" />
     <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.813/-255.-1057.1920.1057@0.23.1440.813" timestamp="1590473805609" />
-    <state width="1398" height="361" key="GridCell.Tab.0.center" timestamp="1596186102289">
+    <state width="1398" height="361" key="GridCell.Tab.0.center" timestamp="1596186218419">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1398" height="392" key="GridCell.Tab.0.center/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1596096143203" />
-    <state width="1398" height="361" key="GridCell.Tab.0.center/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596186102289" />
+    <state width="1398" height="361" key="GridCell.Tab.0.center/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596186218419" />
     <state width="1398" height="392" key="GridCell.Tab.0.center/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596097214178" />
     <state width="1398" height="392" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1596095026110" />
     <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.813/-255.-1057.1920.1057@0.23.1440.813" timestamp="1590473805609" />
-    <state width="1398" height="361" key="GridCell.Tab.0.left" timestamp="1596186102288">
+    <state width="1398" height="361" key="GridCell.Tab.0.left" timestamp="1596186218418">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1398" height="392" key="GridCell.Tab.0.left/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1596096143202" />
-    <state width="1398" height="361" key="GridCell.Tab.0.left/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596186102288" />
+    <state width="1398" height="361" key="GridCell.Tab.0.left/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596186218418" />
     <state width="1398" height="392" key="GridCell.Tab.0.left/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596097214177" />
     <state width="1398" height="392" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1596095026110" />
     <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.813/-255.-1057.1920.1057@0.23.1440.813" timestamp="1590473805609" />
-    <state width="1398" height="361" key="GridCell.Tab.0.right" timestamp="1596186102290">
+    <state width="1398" height="361" key="GridCell.Tab.0.right" timestamp="1596186218420">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1398" height="392" key="GridCell.Tab.0.right/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1596096143204" />
-    <state width="1398" height="361" key="GridCell.Tab.0.right/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596186102290" />
+    <state width="1398" height="361" key="GridCell.Tab.0.right/0.23.1440.806/-255.-1057.1920.1057@0.23.1440.806" timestamp="1596186218420" />
     <state width="1398" height="392" key="GridCell.Tab.0.right/0.23.1440.806/-255.-1080.1920.1080@0.23.1440.806" timestamp="1596097214179" />
     <state width="1398" height="392" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1596095026111" />
     <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.813/-255.-1057.1920.1057@0.23.1440.813" timestamp="1590473805609" />

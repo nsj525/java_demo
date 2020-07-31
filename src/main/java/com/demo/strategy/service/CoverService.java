@@ -4,7 +4,7 @@ package com.demo.strategy.service;
 /**
  * @author nijiejie
  */
-public interface CoverService {
+public interface CoverService<T> {
 
     /**
      * 获取策略的标志
@@ -17,6 +17,6 @@ public interface CoverService {
      * @param param
      * @return
      */
-    Object cover(String param);
+    Object cover(T param);
 
 }

@@ -19,7 +19,7 @@ public class DemoACoverServiceImpl implements CoverService {
     }
 
     @Override
-    public Object cover(String param) {
+    public Object cover(Object param) {
 
         System.out.println("进入了A的方法");
         return null;

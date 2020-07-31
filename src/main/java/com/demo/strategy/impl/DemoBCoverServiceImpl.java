@@ -16,8 +16,8 @@ public class DemoBCoverServiceImpl implements CoverService {
     }
 
     @Override
-    public Object cover(String param) {
-        System.out.println("-------进入方法B-------");
+    public Object cover(Object param) {
+        System.out.println("进入了B的方法");
         return null;
     }
 }
