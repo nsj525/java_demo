@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b30759b9-0a89-425b-b0d1-d5f04b18fca2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Generic/PublicObj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Generic/WebResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/StatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +139,7 @@
       <updated>1590460361401</updated>
       <workItem from="1590460365011" duration="6808000" />
       <workItem from="1590579702053" duration="398000" />
-      <workItem from="1596012221961" duration="25986000" />
+      <workItem from="1596012221961" duration="30251000" />
     </task>
     <servers />
   </component>
@@ -250,11 +246,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/aop/TestDemoDto.java</url>
           <line>13</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/aop/TryImportAspect.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
