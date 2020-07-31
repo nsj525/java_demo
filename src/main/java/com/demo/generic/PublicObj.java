@@ -1,4 +1,4 @@
-package com.demo.Generic;
+package com.demo.generic;
 
 import java.util.List;
 

@@ -4,7 +4,16 @@
 java基础demo，
 
 #### 软件架构
-软件架构说明
+Spring框架整合其他相关框架
+
+
+#### package介绍
+aop: 切面相关
+enums: 枚举相关
+generic: 泛型
+java_extends: 继承和多态
+refactor: 《重构》学习demo转化
+strategy: 策略相关
 
 
 #### 相关资料
