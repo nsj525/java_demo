@@ -1,4 +1,4 @@
-package aop;
+package com.demo.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -18,19 +18,19 @@ import java.lang.reflect.Method;
 @Aspect
 public class TryImportAspect {
 
-    @Pointcut("@annotation(aop.TryImport)")
+    @Pointcut("@annotation(com.demo.aop.TryImport)")
     public void a(){
         System.out.println("-------注解式定义切点------");
     }
 
-    @Around("@annotation(aop.TryImport)")
+    @Around("@annotation(com.demo.aop.TryImport)")
     private Object importSomething(ProceedingJoinPoint pjp) throws Throwable{
 
         //获取添加了此注解的方法
         Method m = ((MethodSignature) pjp.getSignature()).getMethod();
         Method method = pjp.getTarget().getClass().getDeclaredMethod(pjp.getSignature().getName(),m.getParameterTypes());
         //获取注解对象
-        TryImport tryImport = method.getDeclaredAnnotation(aop.TryImport.class);
+        TryImport tryImport = method.getDeclaredAnnotation(com.demo.aop.TryImport.class);
         String key = tryImport.key();
         String value = tryImport.value();
         Boolean isSet = tryImport.isSet();

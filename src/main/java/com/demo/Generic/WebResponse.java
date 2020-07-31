@@ -1,6 +1,6 @@
-package Generic;
+package com.demo.Generic;
 
-import enums.StatusEnum;
+import com.demo.enums.StatusEnum;
 
 /**
  * 泛型使用

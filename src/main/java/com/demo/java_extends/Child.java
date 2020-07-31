@@ -1,4 +1,4 @@
-package java_extends;
+package com.demo.java_extends;
 
 
 /**
