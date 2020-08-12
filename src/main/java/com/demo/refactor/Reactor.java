@@ -1,20 +1,29 @@
 package com.demo.refactor;
 
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
-import lombok.Data;
+import com.demo.refactor.vo.Invoice;
+import com.demo.refactor.vo.Performance;
+import com.demo.refactor.vo.Play;
+import com.demo.utils.ClassInitUtil;
+
+import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Reactor {
     public String statement(Invoice invoice, Map<String, Play> playMap) throws Exception {
+        //总金额
         int totalAmount = 0;
+        //积分
         int volumeCredits = 0;
+
         String result = "Statement for " + invoice.getCustomer() + "\n";
+        //金额格式化为两位小数
         DecimalFormat format = new DecimalFormat("0.00");
+
+        //遍历参数进入的所有发票信息，包含的表演和价格
         for (Performance perf : invoice.getPerformances()) {
+            //获取对应的表演
             Play play = playMap.get(perf.getPlayId());
             int thisAmount = 0;
             switch (play.getType()) {
@@ -36,7 +45,7 @@ public class Reactor {
             }
             volumeCredits += Math.max(perf.getAudience() - 30, 0);
             // add extra credit for every ten comedy attendees
-            if ("comedy" == play.getType()) {
+            if ("comedy".equals(play.getType()) ) {
                 volumeCredits += Math.floor(perf.getAudience() / 5);
             }
             // print line for this order
@@ -53,77 +62,13 @@ public class Reactor {
     public static void main(String[] args) throws Exception {
         Reactor reactor = new Reactor();
 
-        Invoice invoice = getInvoice();
-        HashMap<String, Play> playHashMap = getStringPlayHashMap();
+        Invoice invoice = ClassInitUtil.getInvoice();
+        HashMap<String, Play> playHashMap = ClassInitUtil.getStringPlayHashMap();
 
         String statement = reactor.statement(invoice, playHashMap);
         System.out.println(statement);
-        // Statement for BigCo
-        // Hamlet: $650 (55 seats)
-        // As You Like It: $580 (35 seats)
-        // Othello: $500 (40 seats)
-        // Amount owed is ${1730}
-        // You earned 47 credits
     }
 
-    public static Invoice getInvoice() {
-        Invoice invoice = new Invoice();
-        invoice.setCustomer("BigCo");
-        ArrayList<Performance> performances = new ArrayList<>();
 
-        Performance performance1 = new Performance();
-        performance1.setPlayId("Hamlet");
-        performance1.setAudience(55);
-        performances.add(performance1);
 
-        Performance performance2 = new Performance();
-        performance2.setPlayId("As You Like It");
-        performance2.setAudience(35);
-        performances.add(performance2);
-
-        Performance performance3 = new Performance();
-        performance3.setPlayId("Othello");
-        performance3.setAudience(40);
-        performances.add(performance3);
-        invoice.setPerformances(performances);
-        return invoice;
-    }
-
-    public static HashMap<String, Play> getStringPlayHashMap() {
-        HashMap<String, Play> playHashMap = new HashMap<>();
-        Play play1 = new Play();
-        Play play2 = new Play();
-        Play play3 = new Play();
-
-        play1.setName("Hamlet");
-        play2.setName("As You Like It");
-        play3.setName("Othello");
-
-        play1.setType("tragedy");
-        play2.setType("comedy");
-        play3.setType("tragedy");
-
-        playHashMap.put(play1.getName(), play1);
-        playHashMap.put(play2.getName(), play2);
-        playHashMap.put(play3.getName(), play3);
-        return playHashMap;
-    }
-}
-
-@Data
-class Performance {
-    private String playId;
-    private Integer audience;
-}
-
-@Data
-class Play {
-    private String name;
-    private String type;
-}
-
-@Data
-class Invoice {
-    private String customer;
-    private List<Performance> performances;
 }

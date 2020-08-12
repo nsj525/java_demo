@@ -19,7 +19,7 @@ strategy: 策略相关
 #### 相关资料
 
 1. [aop原理](https://blog.csdn.net/wyl6019/article/details/80136000)
-2.  xxxx
+2. [spring中本类方法互调，被调用方法上的注解不生效](https://www.cnblogs.com/ynyhl/p/12066530.html)
 3.  xxxx
 
 #### 使用说明
