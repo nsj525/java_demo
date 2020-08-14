@@ -30,7 +30,10 @@ class StateMentData{
 }
 public class Reactor3 {
 
-    DecimalFormat format = new DecimalFormat("0.00");
+    public String formatDecimal(int num){
+        DecimalFormat format = new DecimalFormat("0.00");
+        return format.format(num);
+    }
 
     /**
      * 拆分计算过程和格式样式
@@ -53,9 +56,9 @@ public class Reactor3 {
     private String renderPainText(StateMentData statement, Map<String, Play> playMap) throws Exception {
         String result = "Statement for " + statement.getCustomer() + "\n";
         for (Performance perf : statement.getPerformances()) {
-            result += playMap.get(perf.getPlayId()).getName() + ": $" + format.format(amountFor(perf, playMap.get(perf.getPlayId())) / 100) + " (" + perf.getAudience() + " seats)\n";
+            result += playMap.get(perf.getPlayId()).getName() + ": $" + formatDecimal(amountFor(perf, playMap.get(perf.getPlayId())) / 100) + " (" + perf.getAudience() + " seats)\n";
         }
-        result += "Amount owed is ${" + format.format(statement.getTotalAmount() / 100) + "}\n";
+        result += "Amount owed is ${" + formatDecimal(statement.getTotalAmount() / 100) + "}\n";
         result += "You earned " + totalVolumeCredits(statement.getPerformances(), playMap) + " credits\n";
         return result;
     }

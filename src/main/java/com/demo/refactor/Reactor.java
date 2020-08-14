@@ -10,6 +10,9 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 统计所有演出的收入和积分
+ */
 public class Reactor {
     public String statement(Invoice invoice, Map<String, Play> playMap) throws Exception {
         //总金额

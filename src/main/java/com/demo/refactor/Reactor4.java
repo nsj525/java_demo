@@ -4,10 +4,14 @@ import com.demo.refactor.vo.Invoice;
 import com.demo.refactor.vo.Performance;
 import com.demo.refactor.vo.Play;
 
+import org.springframework.stereotype.Component;
+
 import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import javax.annotation.Resource;
 
 import static com.demo.utils.ClassInitUtil.getInvoice;
 import static com.demo.utils.ClassInitUtil.getStringPlayHashMap;
@@ -20,6 +24,9 @@ import static com.demo.utils.ClassInitUtil.getStringPlayHashMap;
  */
 
 public class Reactor4 {
+
+    @Resource
+    private Map<String, Coculator> map;
 
     DecimalFormat format = new DecimalFormat("0.00");
 
@@ -69,12 +76,11 @@ public class Reactor4 {
     }
 
     private int volumeCreditFor(Map<String, Play> playMap, Performance perf) {
-        int volumeCredits = Math.max(perf.getAudience() - 30, 0);
-        // add extra credit for every ten comedy attendees
-        if ("comedy" == playMap.get(perf.getPlayId()).getType()) {
-            volumeCredits += Math.floor(perf.getAudience() / 5);
-        }
-        return volumeCredits;
+
+        Coculator coculator = map.get(playMap.get(perf.getPlayId()).getType());
+
+        return coculator.coculateCredit(perf);
+
     }
 
     /**
@@ -85,28 +91,14 @@ public class Reactor4 {
      * @throws Exception
      */
     private int amountFor(Performance perf, Play play) throws Exception {
-        int thisAmount;
-        switch (play.getType()) {
-            case "tragedy":
-                thisAmount = 40000;
-                if (perf.getAudience() > 30) {
-                    thisAmount += 1000 * (perf.getAudience() - 30);
-                }
-                break;
-            case "comedy":
-                thisAmount = 30000;
-                if (perf.getAudience() > 20) {
-                    thisAmount += 10000 + 500 * (perf.getAudience() - 20);
-                }
-                thisAmount += 300 * perf.getAudience();
-                break;
-            default:
-                throw new Exception("unknown type: $ {" + play.getType() + "}");
-        }
-        return thisAmount;
+
+        Coculator coculator = map.get(play.getType());
+        return coculator.coculateAmount(perf);
     }
 
+
     public static void main(String[] args) throws Exception {
+
         Reactor4 reactor = new Reactor4();
 
         Invoice invoice = getInvoice();
@@ -119,15 +111,16 @@ public class Reactor4 {
 
 }
 
-interface coculator{
+@Component
+interface Coculator{
 
     int coculateAmount(Performance perf);
 
-    int coculateCredit(Play play,Performance perf);
+    int coculateCredit(Performance perf);
 
 }
 
-class Comedy extends Play implements coculator{
+class Comedy extends Play implements Coculator {
 
     @Override
     public int coculateAmount(Performance perf) {
@@ -140,16 +133,16 @@ class Comedy extends Play implements coculator{
     }
 
     @Override
-    public int coculateCredit(Play play, Performance perf) {
+    public int coculateCredit(Performance perf) {
         int volumeCredits = Math.max(perf.getAudience() - 30, 0);
-        // add extra credit for every ten comedy attendees
         volumeCredits += Math.floor(perf.getAudience() / 5);
         return volumeCredits;
     }
+
 }
 
 
-class Tragedy extends Play implements coculator{
+class Tragedy extends Play implements Coculator{
 
     @Override
     public int coculateAmount(Performance perf) {
@@ -163,10 +156,9 @@ class Tragedy extends Play implements coculator{
     }
 
     @Override
-    public int coculateCredit(Play play, Performance perf) {
+    public int coculateCredit(Performance perf) {
         int volumeCredits = Math.max(perf.getAudience() - 30, 0);
-        // add extra credit for every ten comedy attendees
-        volumeCredits += Math.floor(perf.getAudience() / 5);
         return volumeCredits;
     }
+
 }

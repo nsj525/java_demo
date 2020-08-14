@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 方法抽离
+ * 方法抽离【提炼函数】
  * @author nijiejie
  */
 public class Reactor1 {
@@ -47,13 +47,9 @@ public class Reactor1 {
     }
 
     /**
-     * 1、抽离的方法
-     * 2、修改了返回值 thisAmount  =====>  result       (固定的方法返回，统一为 result / data 等)
-     * 3、修改了参数名 perf  ======>   aPerformance     ('缩写' 改成 完整名词直译)
-     * 4、参照上下文，减少具有局部作用域的临时变量，移除局部变量play，改成直接传入playMap
-     * 5、定义方法playFor，获取play对象，内联调用
-     *
-     *
+     * 抽离的方法
+     * 参照上下文，减少具有局部作用域的临时变量，移除局部变量play，改成直接传入playMap
+     * 定义方法playFor，获取play对象，内联参数
      *
      * @param aPerformance
      * @param playMap
@@ -61,7 +57,6 @@ public class Reactor1 {
      * @throws Exception
      */
     public int amountFor(Performance aPerformance, Map<String, Play> playMap) throws Exception{
-    // public int amountFor(Performance aPerformance,Play play) throws Exception{
 
         int result = 0;
 
@@ -93,7 +88,7 @@ public class Reactor1 {
     }
 
     public static void main(String[] args) throws Exception {
-        Reactor reactor = new Reactor();
+        Reactor1 reactor = new Reactor1();
 
         Invoice invoice = ClassInitUtil.getInvoice();
         HashMap<String, Play> playHashMap = ClassInitUtil.getStringPlayHashMap();
