@@ -18,7 +18,7 @@ import static com.demo.utils.ClassInitUtil.getStringPlayHashMap;
  */
 public class Reactor2 {
 
-    DecimalFormat format = new DecimalFormat("0.00");
+    private final DecimalFormat format = new DecimalFormat("0.00");
 
     /**
      * 提炼函数 + 拆分循环

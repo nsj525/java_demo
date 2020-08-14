@@ -8,6 +8,7 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import lombok.Data;
 
@@ -55,29 +56,41 @@ public class Reactor3 {
 
     private String renderPainText(StateMentData statement, Map<String, Play> playMap) throws Exception {
         String result = "Statement for " + statement.getCustomer() + "\n";
-        for (Performance perf : statement.getPerformances()) {
-            result += playMap.get(perf.getPlayId()).getName() + ": $" + formatDecimal(amountFor(perf, playMap.get(perf.getPlayId())) / 100) + " (" + perf.getAudience() + " seats)\n";
-        }
+        // for (Performance perf : statement.getPerformances()) {
+        //     result += playMap.get(perf.getPlayId()).getName() + ": $" + formatDecimal(amountFor(perf, playMap.get(perf.getPlayId())) / 100) + " (" + perf.getAudience() + " seats)\n";
+        // }
+       result +=statement.getPerformances().stream().map(performance -> {
+            try {
+                return playMap.get(performance.getPlayId()).getName() + ": $" + formatDecimal(amountFor(performance, playMap.get(performance.getPlayId())) / 100) + " (" + performance.getAudience() + " seats)\n";
+            } catch (Exception e) {
+                e.printStackTrace();
+                return "";
+            }
+        }).collect(Collectors.joining(""));
         result += "Amount owed is ${" + formatDecimal(statement.getTotalAmount() / 100) + "}\n";
         result += "You earned " + totalVolumeCredits(statement.getPerformances(), playMap) + " credits\n";
         return result;
     }
 
     private int totalVolumeCredits(List<Performance> performances, Map<String, Play> playMap) {
-        int volumeCredits = 0;
-        for (Performance perf : performances) {
-            volumeCredits += volumeCreditFor(playMap, perf);
-        }
-        return volumeCredits;
+        return performances.stream().mapToInt(performance -> volumeCreditFor(playMap, performance)).sum();
+
     }
 
     private int totalAmount(Invoice invoice, Map<String, Play> playMap) throws Exception {
-        int totalAmount = 0;
-        for (Performance perf : invoice.getPerformances()) {
-            int thisAmount = amountFor(perf, playMap.get(perf.getPlayId()));
-            totalAmount += thisAmount;
-        }
-        return totalAmount;
+        return invoice.getPerformances().stream().mapToInt(performance -> {
+            try {
+                return amountFor(performance, playMap.get(performance.getPlayId()));
+            } catch (Exception e) {
+                e.printStackTrace();
+                return 0;
+            }
+        }).sum();
+
+        // for (Performance perf : invoice.getPerformances()) {
+        //     int thisAmount = amountFor(perf, playMap.get(perf.getPlayId()));
+        //     totalAmount += thisAmount;
+        // }
     }
 
     private int volumeCreditFor(Map<String, Play> playMap, Performance perf) {

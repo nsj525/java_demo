@@ -4,6 +4,8 @@ import com.demo.refactor.vo.Invoice;
 import com.demo.refactor.vo.Performance;
 import com.demo.refactor.vo.Play;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
 import java.text.DecimalFormat;
@@ -11,6 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
 import static com.demo.utils.ClassInitUtil.getInvoice;
@@ -22,7 +25,7 @@ import static com.demo.utils.ClassInitUtil.getStringPlayHashMap;
  * @date: 2020/7/31
  * @time: 11:15 上午
  */
-
+@Component
 public class Reactor4 {
 
     @Resource
@@ -59,11 +62,7 @@ public class Reactor4 {
     }
 
     private int totalVolumeCredits(List<Performance> performances, Map<String, Play> playMap) {
-        int volumeCredits = 0;
-        for (Performance perf : performances) {
-            volumeCredits += volumeCreditFor(playMap, perf);
-        }
-        return volumeCredits;
+        return performances.stream().mapToInt(performance -> volumeCreditFor(playMap, performance)).sum();
     }
 
     private int totalAmount(Invoice invoice, Map<String, Play> playMap) throws Exception {
@@ -90,6 +89,7 @@ public class Reactor4 {
      * @return
      * @throws Exception
      */
+    @PostConstruct
     private int amountFor(Performance perf, Play play) throws Exception {
 
         Coculator coculator = map.get(play.getType());
@@ -97,16 +97,16 @@ public class Reactor4 {
     }
 
 
-    public static void main(String[] args) throws Exception {
-
-        Reactor4 reactor = new Reactor4();
-
-        Invoice invoice = getInvoice();
-        HashMap<String, Play> playHashMap = getStringPlayHashMap();
-
-        String statement = reactor.statement(invoice, playHashMap);
-        System.out.println(statement);
-    }
+    // public static void main(String[] args) throws Exception {
+    //
+    //     Reactor4 reactor = new Reactor4();
+    //
+    //     Invoice invoice = getInvoice();
+    //     HashMap<String, Play> playHashMap = getStringPlayHashMap();
+    //
+    //     String statement = reactor.statement(invoice, playHashMap);
+    //     System.out.println(statement);
+    // }
 
 
 }
