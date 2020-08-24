@@ -1,4 +1,4 @@
-package com.demo.strategy;
+package com.demo.design.patterns.strategy;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.demo.strategy.service.CoverService;
+import com.demo.design.patterns.strategy.service.CoverService;
 
 /**
  * 策略

@@ -1,6 +1,6 @@
 package com.test;
 
-import com.demo.strategy.CoverResolver;
+import com.demo.design.patterns.strategy.CoverResolver;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

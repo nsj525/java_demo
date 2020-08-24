@@ -1,6 +1,6 @@
-package com.demo.strategy.impl;
+package com.demo.design.patterns.strategy.impl;
 
-import com.demo.strategy.service.CoverService;
+import com.demo.design.patterns.strategy.service.CoverService;
 
 import org.springframework.stereotype.Service;
 

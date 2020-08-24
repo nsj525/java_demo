@@ -1,4 +1,4 @@
-package com.demo.strategy.service;
+package com.demo.design.patterns.strategy.service;
 
 
 /**
