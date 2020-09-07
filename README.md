@@ -52,3 +52,15 @@ strategy: 策略相关
 2. 通过@Autowired或@Resource,借助Spring注入所有子类
 - List<Parent> list;
 - Map<String,Parent> map;
+
+#### 多线程
+1、线程的三种创建方式：继承Thread类、实现Runnable接口、实现Callable接口
+2、线程池~ ~
+
+#### IO流相关
+
+[BufferedReader](https://blog.csdn.net/ai_bao_zi/article/details/81134801)
+[InputStreamReader](https://blog.csdn.net/ai_bao_zi/article/details/81133476)
+[其他相关资料 ↓↓ 点击这里](https://me.csdn.net/ai_bao_zi)
+
+1、Interceptor（拦截器）中通过HttpServletRequest获取参数对象（@RequestBody方式传入json），数据流只能获取一次
