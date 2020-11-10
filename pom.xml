@@ -125,6 +125,18 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.koolearn</groupId>
+            <artifactId>jave</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org</groupId>
+            <artifactId>jaudiotagger</artifactId>
+            <version>2.0.3</version>
+        </dependency>
+
     </dependencies>
 
 </project>
