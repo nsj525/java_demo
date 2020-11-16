@@ -29,7 +29,7 @@ public class Simple_Five {
     }
 
     /**
-     * 力扣大神结题------快排
+     * 力扣大神解题------快排
      * @param points
      * @param K
      * @return
@@ -45,7 +45,7 @@ public class Simple_Five {
         int curPosition = -1;
 
         /*
-            对 points 进行 快排
+         *   对 points 进行 快排
          */
         while (curPosition != K - 1) {
             curPosition = partition(points, leftIndex, rightIndex);
@@ -104,9 +104,6 @@ public class Simple_Five {
     }
 
     public static void main(String[] args) {
-        // int[][] num = new int[][]{new int[]{3,3},new int[]{5,-1},new int[]{-2,4}};
-        // int k = 2;
-        // System.out.println("---------返回结果为----------"+ JSONObject.toJSONString(method1(num,k)));
     }
 
 }
