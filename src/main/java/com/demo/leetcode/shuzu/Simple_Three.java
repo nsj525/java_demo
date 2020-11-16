@@ -1,4 +1,4 @@
-package com.demo.leecode.shuzu;
+package com.demo.leetcode.shuzu;
 
 import java.util.Arrays;
 import java.util.HashMap;

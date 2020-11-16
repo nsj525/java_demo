@@ -1,4 +1,4 @@
-package com.demo.leecode.shuzu;
+package com.demo.leetcode.shuzu;
 
 import com.alibaba.fastjson.JSONObject;
 

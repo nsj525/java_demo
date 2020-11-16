@@ -1,6 +1,4 @@
-package com.demo.leecode.shuzu;
-
-import com.alibaba.fastjson.JSONObject;
+package com.demo.leetcode.shuzu;
 
 import java.util.Arrays;
 import java.util.Comparator;

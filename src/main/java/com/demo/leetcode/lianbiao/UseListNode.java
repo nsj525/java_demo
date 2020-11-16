@@ -1,6 +1,4 @@
-package com.demo.leecode.lianbiao;
-
-import org.springframework.http.converter.json.GsonBuilderUtils;
+package com.demo.leetcode.lianbiao;
 
 /**
  * 链表ListNode的使用

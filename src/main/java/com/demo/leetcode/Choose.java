@@ -1,4 +1,4 @@
-package com.demo.leecode;
+package com.demo.leetcode;
 
 import com.alibaba.fastjson.JSONObject;
 
